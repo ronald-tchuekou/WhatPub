@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2019.  WhatPub by Ronald Tchuekou.
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.DeletePublicationsActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarAct_deleted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/grayclean"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/selectedAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="3dp"
+            android:padding="10dp"
+            android:text="@string/tout_selectionner"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/nb_selection_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:text="0"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/collectionDeletedPub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/emptyData"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

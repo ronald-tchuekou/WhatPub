@@ -1,0 +1,110 @@
+<!--
+  ~ Copyright © 2019.  WhatPub by Ronald Tchuekou.
+  -->
+
+<resources>
+    <string name="app_name">WhatPub</string>
+    <string name="version">1.1.0</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">WhatPub</string>
+    <string name="nav_header_subtitle">What publications</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="pub_course">Publications en cours</string>
+    <string name="all_pub">Toutes les publications</string>
+    <string name="about">À propos</string>
+    <string name="pub_finish">Publications terminées</string>
+
+    <string name="action_pubFinish">Publications terminées</string>
+    <string name="action_sort">Trier par</string>
+    <string name="action_deleted">Supprimer</string>
+    <string name="cancle">ANNULER</string>
+    <string name="strDate">Date de création</string>
+    <string name="priorit">Priorité</string>
+    <string name="echeance">Echéance</string>
+    <string name="pubComplete">Publications completes</string>
+    <string name="author">Ronald Tchuekou</string>
+    <string name="description">What Publications</string>
+    <string name="description_app">Cette application permet de publier des annonces,
+        produits, et bien d\'autres dans la plate frome de communication WhatsApp.
+        Elle raccourcit la tâche en donnant la possibilité de faire repéter
+        des publications à des delais fixés au préalable.</string>
+    <string name="email">ronaldtchuekou@gmial.com/ronaldtchuekou@outlook.com</string>
+    <string name="copyright">Copyright © 2019. Tous droits réservés, <b><i>BIG-TRo</i></b></string>
+    <string name="app_add_pub">Nouvelle publication</string>
+    <string name="save">ENREGISTRER</string>
+    <string name="hint_pub_edit">Nom de la publication</string>
+    <string name="delais">Echéance : </string>
+    <string name="delete">SUPPRIMER</string>
+    <string name="deleted">Suppréssions</string>
+    <string name="terminer">terminé</string>
+    <string name="encours">En cours</string>
+    <string name="aucune">AUCUNE</string>
+    <string name="description_hint">Description de la publication</string>
+    <string name="repeter">Répétition(s) restante(s) : </string>
+    <string name="cat_card_draggable_card_content">This is draggable card 1</string>
+    <string name="choose_images">Image</string>
+    <string name="todo">TODO</string>
+    <string name="Image">+ Ajouter Image(s)</string>
+    <string name="groupe">+ Ajouter Groupe(s)</string>
+    <string name="example_date">1 Oct 2019</string>
+    <string name="Houre">Heure</string>
+    <string name="date">Date</string>
+    <string name="ajouter">+  Ajouter une image</string>
+    <string name="msgConfirmDelet">Voulez-vous vraiment supprimer cette publication ?</string>
+    <string name="msgConfirmDeleted">Voulez-vous vraiment supprimer ce(s) publication(s) ?</string>
+    <string name="titleConfirmDelet">Message de confirmation</string>
+    <string name="yesBtnDelet">OUI</string>
+    <string name="noBtnDelet">NON</string>
+    <string name="titelEdit">Modification de pub</string>
+    <string name="titleInfo">Information</string>
+    <string name="msgInfo">Pour retourner, utiliser la plage de navigation (Menu de navigation aux trois barres) !</string>
+    <string name="deletedComplet">Publication(s) supprimée(s)</string>
+    <string name="a">à</string>
+    <string name="fois">fois</string>
+    <string name="description_annonce">Description : \n\n</string>
+    <string name="status">Status de la pub :</string>
+    <string name="tout_selectionner">Tout Selectionner</string>
+    <string name="emptyData">Auccune annonce trouvée !</string>
+    <string name="msgNotElement">Aucun element n\'a été selectionné, selecetionner au moins un element de la liste.</string>
+    <string name="titleNotElement">Avertissement</string>
+    <string name="titleScrollInfo">Avertissement</string>
+    <string name="msgScrollInfo">Pour pouvoir selectionner tous les éléments de cette liste, veuillez premièrement scroller jusqu\'au dernier élément de la liste.</string>
+    <string name="search_hint">Recherche</string>
+    <string name="image_txt">Images :</string>
+    <string name="groupe_txt">Groupes :</string>
+    <string name="titlePupop">Trier par</string>
+    <string name="obl_permission">La permission est obligatoire pour la recuperation d\'une photo</string>
+    <string name="paramtres">Parametres</string>
+    <string name="app_choose_image">Selection des ima...</string>
+    <string name="titleRequestPermission">Autorisation requise</string>
+    <string name="msgRequestPermission">Cette autorisation est requise pour permettre l\'accès à la memoire du téléphone, permettant à WhatPub
+        d\'avoir accès aux images.</string>
+    <string name="permissionGranted">Autorisation accordée !</string>
+    <string name="permissionDinied">Autorisation refusée !</string>
+    <string name="emptyImage">Aucune image selectionnée.</string>
+    <string name="status_d">Status de la publication</string>
+    <string name="description_d">Description de la publication</string>
+    <string name="nombre_d">Nombre de répé tition</string>
+    <string name="delais_d">Delais d\'envoie de la publication</string>
+    <string name="nom_d">Nom de la publication</string>
+    <string name="is_finish">est teminée.</string>
+    <string name="the_publication">La publication  :</string>
+    <string name="rest_publish">Nombre de répétion restante :</string>
+    <string name="forThis">répetition(s) pour la publication</string>
+    <string name="showPub">Afficher</string>
+    <string name="updatedSuccess">Mis à jour éffectuée.</string>
+    <string name="saveSuccess">Sauvegarde éffectuée.</string>
+    <string name="repeat">Répéter :</string>
+    <string name="titleActivityDisplay">Détails de la publication</string>
+    <string-array name="repetions">
+        <item>1 fois</item>
+        <item>2 fois</item>
+        <item>3 fois</item>
+        <item>4 fois</item>
+        <item>5 fois</item>
+    </string-array>
+
+</resources>

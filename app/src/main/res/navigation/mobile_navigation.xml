@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2019.  WhatPub by Ronald Tchuekou.
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_all_pub">
+
+    <fragment
+        android:id="@+id/nav_pub_in_course"
+        android:name="com.whatpub.ui.pub_course.Pub_course"
+        android:label="@string/pub_course"
+        tools:layout="@layout/fragment_all_pub" />
+
+    <fragment
+        android:id="@+id/nav_all_pub"
+        android:name="com.whatpub.ui.all_pub.All_pub"
+        android:label="@string/all_pub"
+        tools:layout="@layout/fragment_all_pub" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.whatpub.ui.about.About"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_pub_finish"
+        android:name="com.whatpub.ui.pub_finish.Pub_finish"
+        android:label="@string/pub_finish"
+        tools:layout="@layout/fragment_all_pub" />
+</navigation>

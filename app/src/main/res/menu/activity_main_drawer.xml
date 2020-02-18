@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2019.  WhatPub by Ronald Tchuekou.
+  -->
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all_pub"
+            android:icon="@drawable/all_pub_icon"
+            android:title="@string/all_pub" />
+        <item
+            android:id="@+id/nav_pub_in_course"
+            android:icon="@drawable/pub_course"
+            android:title="@string/pub_course" />
+        <item
+            android:id="@+id/nav_pub_finish"
+            android:icon="@drawable/ic_tasks_solid"
+            android:title="@string/pub_finish" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="@string/about" />
+    </group>
+
+</menu>

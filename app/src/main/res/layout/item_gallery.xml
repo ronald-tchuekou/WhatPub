@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/image_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/album"
+            android:src="@drawable/add_botton_icon"
+            android:contentDescription="TODO" />
+        <TextView
+            android:id="@+id/text_des_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="description of image"
+            android:textSize="2sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>
