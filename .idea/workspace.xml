@@ -11,8 +11,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21989d32-f4b7-4c98-9004-1ec3c6a65183" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_choose_images.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/ic_launcher-web.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/wp_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +62,42 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/wp_icon.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,6 +108,12 @@
         <option value="Enum" />
       </list>
     </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\Users\GENERAL STORE\Desktop\WhatPub\WhatPubKey.jks" />
+    <option name="KEY_ALIAS" value="whatpubKey1" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,7 +158,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/whatpub/activities/ChooseImages.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main2_activitymmmmmmmmmmmmmm.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/whatpub/activities/Main2Activitymmmmmmmmmmmmmm.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/whatpub/DataBase/DatabaseManager.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
@@ -101,6 +171,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout-land/activity_choose_images.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_add_publication.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -117,32 +188,57 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="WhatPub" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="WhatPub" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="WhatPub" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ExportApk.ApkPath" value="C:\Users\GENERAL STORE\Desktop\WhatPub\app" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="ExportApk.SignV2" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.whatpub.Adapter" />
-    </key>
-    <key name="android.template.packageName">
-      <recent name="com.whatpub.activities" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\GENERAL STORE\Desktop\WhatPub\app\src\main\res\drawable" />
       <recent name="C:\Users\GENERAL STORE\Desktop\WhatPub\app\src\main\res\layout-land" />
       <recent name="C:\Users\GENERAL STORE\Desktop\app\src\main\res\drawable" />
       <recent name="C:\Users\GENERAL STORE\Desktop\app\src\main\res\drawable-v21" />
       <recent name="C:\Users\GENERAL STORE\Desktop\app\src\main\res" />
-      <recent name="C:\Users\GENERAL STORE\Desktop\app\src\main\res\mipmap-anydpi-v26" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="com.whatpub.activities" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.whatpub.Adapter" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -275,6 +371,14 @@
       <option name="presentableId" value="Default" />
       <updated>1579200370556</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit to this project.">
+      <created>1582045130848</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582045130848</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -288,10 +392,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info id="Palette " order="1" type="SLIDING" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.23373677" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.22012103" />
       <window_info id="Structure" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
       <window_info id="Image Layers" order="5" />
@@ -302,12 +407,12 @@
       <window_info anchor="bottom" id="Run" order="0" weight="0.3282313" />
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.5969388" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32993197" />
-      <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.3282313" />
       <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.49924356" weight="0.32993197" />
-      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50075644" side_tool="true" weight="0.32993197" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50075644" side_tool="true" weight="0.3197279" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32993197" />
-      <window_info anchor="bottom" id="Build" order="8" weight="0.3197279" />
+      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49924356" weight="0.3197279" />
       <window_info anchor="bottom" id="Debug" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -389,33 +494,10 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+    <MESSAGE value="Initial commit to this project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit to this project." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml">
-      <provider selected="true" editor-type-id="nav-designer" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v21/all_pub_icon.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/pub_course.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_tasks_solid.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/all_pub_icon.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/whatpub/Adapter/CardView.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/whatpub/Adapter/Pub_adapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -482,14 +564,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/whatpub/activities/Main2Activitymmmmmmmmmmmmmm.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/whatpub/DataBase/DatabaseManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="911">
@@ -706,6 +780,42 @@
           <caret line="207" column="16" selection-start-line="207" selection-start-column="16" selection-end-line="207" selection-end-column="16" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_text_nb_image.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../GENERAL">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/whatpub_icon2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/wp_icon.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
   <component name="masterDetails">

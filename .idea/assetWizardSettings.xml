@@ -65,11 +65,17 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
+                                                <entry key="scalingPercent" value="68" />
                                               </map>
                                             </option>
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="foregroundImage" value="C:\Users\GENERAL STORE\Pictures\WP_psd\icons\whatpub_icon2(192).png" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -144,18 +150,13 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\GENERAL STORE\Desktop\App SMS\GPSMS_maquete\gpsms_icon.png" />
-                                      <entry key="outputName" value="gpsms_icon" />
+                                      <entry key="imageAsset" value="C:\Users\GENERAL STORE\Pictures\WP_psd\icons\whatpub_icon2(192).png" />
+                                      <entry key="outputName" value="ic_launcher" />
                                     </map>
                                   </option>
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="NOTIFICATION" />
                           </map>
                         </option>
                       </PersistentState>
