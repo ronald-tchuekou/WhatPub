@@ -67,6 +67,12 @@ public class WhatPubService extends Service {
                             postToWhatsapp(annonce);
 
                             if (nb_repetition == 1) {
+
+                                Intent bs = new Intent();
+                                bs.setAction("ANNONCE_FINISH");
+                                bs.putExtra("annonce_id", annonce.getId_annonce());
+                                sendBroadcast(bs);
+
                                 contentText = getResources().getString(R.string.pub_finish);
                                 Log.d(TAG, getResources().getString(R.string.pub_finish)+": "+annonce.getNom_annonce());
                             }
@@ -109,24 +115,23 @@ public class WhatPubService extends Service {
         PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 1223, intent, 0);
         // Pour la notification.
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
+                .setSmallIcon(R.drawable.whatpub_icon)
                 .setContentTitle(pub_name)
                 .setContentText(contentText)
                 .setContentIntent(pendingIntent)
-                .setSmallIcon(R.mipmap.ic_launcher)
                 .setAutoCancel(true)
                 .setGroup(GROUP_KEY)
                 .setPriority(NotificationCompat.PRIORITY_LOW)
                 .build();
 
-
         Notification summaryNotification = new NotificationCompat.Builder(this, CHANNEL_ID)
-              .setSmallIcon(R.mipmap.ic_launcher)
               .setStyle(new NotificationCompat.InboxStyle()
                     .addLine(contentText)
                     .setBigContentTitle("WhatPub-app")
                     .setSummaryText("WhatPub"))
               .setPriority(NotificationCompat.PRIORITY_LOW)
               .setContentIntent(pendingIntent)
+              .setSmallIcon(R.drawable.whatpub_icon)
               .setColor(getResources().getColor(R.color.green))
               .setAutoCancel(true)
               .setGroup(GROUP_KEY)
@@ -160,6 +165,15 @@ public class WhatPubService extends Service {
     public IBinder onBind(Intent intent) {
         Log.d(TAG, "onBind : methode");
         return null;
+    }
+
+    /**
+     * Function to cancel all the notification.
+     */
+    public void cancelAllNotifications(Context context) {
+        NotificationManager manager = (NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
+        assert manager != null;
+        manager.cancelAll();
     }
 
     @Override

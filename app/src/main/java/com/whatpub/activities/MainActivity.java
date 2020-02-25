@@ -9,9 +9,11 @@ package com.whatpub.activities;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -70,11 +72,24 @@ public class MainActivity extends AppCompatActivity {
     public static int id_current_fragment;
     public static TextView emptyData;
 
+    private IntentFilter intentFilter;
+    private BroadcastReceiver receiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            Log.d(TAG, "onReceive: The broadcast id send.");
+            refreachAdapter();
+        }
+    };
+
+    private WhatPubService service = new WhatPubService();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "onCreate: Activity is set.");
 
-        Log.d(TAG, "Est Crée");
+        intentFilter = new IntentFilter();
+        intentFilter.addAction("ANNONCE_FINISH");
 
         this.activity = this;
         mainActivity = this;
@@ -313,4 +328,16 @@ public class MainActivity extends AppCompatActivity {
                 emptyData.setText("");
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        service.cancelAllNotifications(this);
+        registerReceiver(receiver, intentFilter);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        unregisterReceiver(receiver);
+    }
 }
