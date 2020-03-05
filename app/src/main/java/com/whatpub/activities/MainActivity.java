@@ -313,7 +313,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.putExtra(Intent.EXTRA_EMAIL, addresses);
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
-        intent.setType("message/*");
+        intent.setType("message/rfc822");
         startActivity(Intent.createChooser(intent, getString(R.string.titleChooser)));
     }
 
