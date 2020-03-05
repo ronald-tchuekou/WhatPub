@@ -133,16 +133,13 @@ public class WhatPubService extends Service {
               .setGroupAlertBehavior(NotificationCompat.GROUP_ALERT_CHILDREN)
               .setGroupSummary(true)
               .build();
-
         // Pour la vibration.
         Vibrator vibrator = (Vibrator) getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE);
         assert vibrator != null;
         vibrator.vibrate(600);
-
         //Play sound.
         MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.whatpub_notify);
         mediaPlayer.start();
-
         // Afficher la notification.
         NotificationManager manager = (NotificationManager)getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
         notification.flags = Notification.FLAG_AUTO_CANCEL;

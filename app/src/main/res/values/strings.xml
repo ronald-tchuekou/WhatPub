@@ -99,6 +99,8 @@
     <string name="saveSuccess">Sauvegarde éffectuée.</string>
     <string name="repeat">Répéter :</string>
     <string name="titleActivityDisplay">Détails de la publication</string>
+    <string name="action_contact">Contacter</string>
+    <string name="titleChooser">Selectionnez une application pour l\'envoie du mail.</string>
     <string-array name="repetions">
         <item>1 fois</item>
         <item>2 fois</item>

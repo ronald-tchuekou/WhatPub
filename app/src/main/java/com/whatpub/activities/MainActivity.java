@@ -21,6 +21,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.android.material.snackbar.BaseTransientBottomBar;
+import com.google.android.material.snackbar.Snackbar;
 import com.whatpub.Adapter.Pub_adapter;
 import com.whatpub.DataBase.DatabaseManager;
 import com.whatpub.Services.WhatPubService;
@@ -283,10 +285,36 @@ public class MainActivity extends AppCompatActivity {
             pupop.setPositiveButton(getResources().getString(R.string.cancle), null);
             pupop.show();
         }
+        else if (id == R.id.action_contact){
+            sendMessageWithIntent();
+        }
         else { // Cette partie concerne le menu drawer.
             drawer.openDrawer(GravityCompat.START);
         }
         return true;
+    }
+
+    /**
+     * Function to send the message suggestion with intent.
+     */
+    private void sendMessageWithIntent () {
+        String subject =  "[Sujet du contact] - (about WhatPub app)";
+        String mailAddress = "ronaldwoungang@gmail.com";
+        composeEmail(new String[]{mailAddress}, subject);
+    }
+
+    /**
+     * Function to send message mail with intent.
+     * @param addresses Recipient.
+     * @param subject Subject of message.
+     */
+    public void composeEmail(String[] addresses, String subject) {
+        Log.d(TAG, "composeEmail: Sending the mail function.");
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_EMAIL, addresses);
+        intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+        intent.setType("message/*");
+        startActivity(Intent.createChooser(intent, getString(R.string.titleChooser)));
     }
 
     @Override
