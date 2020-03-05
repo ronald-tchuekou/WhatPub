@@ -15,7 +15,7 @@ import com.whatpub.Controllers.Controller;
 import com.whatpub.DataBase.DatabaseManager;
 import com.whatpub.Models.Annonce;
 import com.whatpub.R;
-import com.whatpub.activities.MainActivity;
+import com.whatpub.activities.DisplayPublicationActivity;
 
 import java.util.List;
 
@@ -43,36 +43,25 @@ public class WhatPubService extends Service {
             @Override
             public void run() {
                 while (!jobCancelled) {
-
                     DatabaseManager db = new DatabaseManager(getApplicationContext());
-
                     List<Annonce> annonces = db.getAllAnnonce();
-
+                    int inCourseCount = db.getAllAnnonceInCours().size();
                     for (int i=0; i<annonces.size(); i++) {
-
                         Annonce annonce = annonces.get(i);
-
                         int nb_repetition = annonce.getNb_repetition();
                         boolean terminer = Boolean.parseBoolean(annonce.getTerminer());
-
                         Controller controller = Controller.getInstance();
                         Log.d(TAG, "run: "+controller.cameBefore(annonce.getDelais(), annonce.getHeure()));
                         if (!controller.cameBefore(annonce.getDelais(), annonce.getHeure()) && !terminer) {
-
                             db.isFinish(annonce, nb_repetition);
-
                             String contentText;
-
                             // Post dans whatsapp.
                             postToWhatsapp(annonce);
-
                             if (nb_repetition == 1) {
-
                                 Intent bs = new Intent();
                                 bs.setAction("ANNONCE_FINISH");
                                 bs.putExtra("annonce_id", annonce.getId_annonce());
                                 sendBroadcast(bs);
-
                                 contentText = getResources().getString(R.string.pub_finish);
                                 Log.d(TAG, getResources().getString(R.string.pub_finish)+": "+annonce.getNom_annonce());
                             }
@@ -80,9 +69,13 @@ public class WhatPubService extends Service {
                                 contentText = getResources().getString(R.string.rest_publish)+" "+(nb_repetition-1);
                                 Log.d(TAG, "Une publication postée ==> "+ annonce.getNom_annonce() +" Reste de repetition : "+(annonce.getNb_repetition()-1));
                             }
-
                             buildNotification(annonce.getNom_annonce(), contentText, annonce.getId_annonce());
                         }
+                    }
+                    if (inCourseCount <= 0){
+                        Log.d(TAG, "run: Size annonce in course = " + inCourseCount);
+                        jobCancelled = true;
+                        stopSelf();
                     }
                     try {
                         Thread.sleep(5000);
@@ -110,9 +103,10 @@ public class WhatPubService extends Service {
         Log.d(TAG, "La notification est lancée. Id pub = "+id_annonce);
 
         // Pour le displayPublication.
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), DisplayPublicationActivity.class);
         intent.putExtra("id_annonce", id_annonce);
-        PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 1223, intent, 0);
+        int flag = PendingIntent.FLAG_UPDATE_CURRENT;
+        PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), id_annonce, intent, flag);
         // Pour la notification.
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setSmallIcon(R.drawable.whatpub_icon)
@@ -123,7 +117,7 @@ public class WhatPubService extends Service {
                 .setGroup(GROUP_KEY)
                 .setPriority(NotificationCompat.PRIORITY_LOW)
                 .build();
-
+        // Pour la notification summary.
         Notification summaryNotification = new NotificationCompat.Builder(this, CHANNEL_ID)
               .setStyle(new NotificationCompat.InboxStyle()
                     .addLine(contentText)
@@ -139,8 +133,6 @@ public class WhatPubService extends Service {
               .setGroupAlertBehavior(NotificationCompat.GROUP_ALERT_CHILDREN)
               .setGroupSummary(true)
               .build();
-
-        //TODO Faire en sorte que la notification soit affichée au header du device.
 
         // Pour la vibration.
         Vibrator vibrator = (Vibrator) getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE);

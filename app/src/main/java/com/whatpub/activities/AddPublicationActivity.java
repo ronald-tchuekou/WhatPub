@@ -5,6 +5,7 @@
 package com.whatpub.activities;
 
 import android.Manifest;
+import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
@@ -40,6 +41,7 @@ import com.whatpub.Models.Photo;
 import com.whatpub.Pickers.DatePickerFragment;
 import com.whatpub.Pickers.TimePickerFragment;
 import com.whatpub.R;
+import com.whatpub.Services.WhatPubService;
 import com.whatpub.imagesManage.ImagesManager;
 
 import java.io.Serializable;
@@ -414,12 +416,38 @@ public class AddPublicationActivity extends AppCompatActivity implements Adapter
         if (id == R.id.add_cancel || id == android.R.id.home) {
             finish();
         }else if (id == R.id.add_save) {
+            restartService();
             if (getIntent().hasExtra("id_annonce_edit"))
                 updateListener();
             else
                 saveListener();
         }
         return true;
+    }
+
+    /**
+     * Function to restarted the service.
+     */
+    private void restartService() {
+        Intent serviceIntent = new Intent(this, WhatPubService.class);
+        if (!isServiceRunning(WhatPubService.class))
+            startService(serviceIntent);
+    }
+
+    /**
+     * Function to verify if service in running.
+     * @param serviceClass Class of the service.
+     * @return Boolean value.
+     */
+    private boolean isServiceRunning(Class<?> serviceClass) {
+        ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        assert manager != null;
+        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if (serviceClass.getName().equals(service.service.getClassName())) {
+                return true;
+            }
+        }
+        return false;
     }
     /**
      * Fonction qui permet de faire la mis à jour d'une annonce dans la base de données.
@@ -546,7 +574,6 @@ public class AddPublicationActivity extends AppCompatActivity implements Adapter
                 btnTime.setText(annonce.getHeure());
                 spinner.setSelection(annonce.getNb_repetition()-1);
                 description.setText(annonce.getDescription());
-
                 List<String> imagesIntent = new ArrayList<>();
                 List photos = databaseManager.getPhotos(id_annonce);
                 for (int i=0; i<photos.size(); i++){
@@ -555,7 +582,6 @@ public class AddPublicationActivity extends AppCompatActivity implements Adapter
                     Log.d(TAG, "getDataIntent () : Nom de la photo => "+photo.getNom_photo());
                 }
                 images = imagesIntent;
-
                 adaptImagesChecke(imagesIntent);
             }
     }

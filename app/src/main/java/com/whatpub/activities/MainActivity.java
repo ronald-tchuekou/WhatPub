@@ -228,7 +228,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             if (currentFragment.getId() == R.id.nav_about) {
                 AlertDialog.Builder useNavBar = new AlertDialog.Builder(MainActivity.this);
-                useNavBar.setIcon(R.mipmap.ic_launcher);
+                useNavBar.setIcon(R.drawable.whatpub_icon);
                 useNavBar.setTitle(R.string.titleInfo);
                 useNavBar.setMessage(R.string.msgInfo);
                 useNavBar.setPositiveButton("OK", null);

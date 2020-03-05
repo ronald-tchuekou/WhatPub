@@ -8,6 +8,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
@@ -424,9 +425,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
     public boolean insertGroupe(Groupe groupe) {
         try {
             String query = "insert into groupe (nom_groupe) values ('"+ groupe.getNom_groupe() +"')";
-
             this.getWritableDatabase().execSQL( query );
-
         }catch (SQLException e){
             Log.d(TAG, " Erreur d'insertion sur la requete *insertGroupe* ");
             return false;
@@ -442,9 +441,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
     public boolean insertPublier(Publier publier) {
         try {
             String query = "insert into publier (id_annonce, id_groupe) values ("+ publier.getId_annonce() +", "+ publier.getId_groupe() +")";
-
             this.getWritableDatabase().execSQL( query );
-
         }catch (SQLException e){
             Log.d(TAG, " Erreur d'insertion sur la requete *insertPublier* ");
             return false;
@@ -507,10 +504,8 @@ public class DatabaseManager extends SQLiteOpenHelper {
         try {
             for ( int id_publier : id_publiers){
                 String query = "delete from groupe where id_groupe = " + id_publier;
-
                 this.getWritableDatabase().execSQL( query );
             }
-
         }catch (SQLException e){
             Log.d(TAG, " Erreur de suppression sur la requete *deleteFromPhoto* ");
             return false;
@@ -527,10 +522,8 @@ public class DatabaseManager extends SQLiteOpenHelper {
         try {
             for ( int id_groupe : id_groupes){
                 String query = "delete from groupe where id_groupe = " + id_groupe;
-
                 this.getWritableDatabase().execSQL( query );
             }
-
         }catch (SQLException e){
             Log.d(TAG, " Erreur de suppression sur la requete *deleteFromPhoto* ");
             return false;
@@ -668,5 +661,4 @@ public class DatabaseManager extends SQLiteOpenHelper {
             Log.d(TAG, " Erreur d'insertion sur la requete *isFinish* "+e.getMessage());
         }
     }
-
 }
